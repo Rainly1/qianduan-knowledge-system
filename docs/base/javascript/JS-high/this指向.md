@@ -393,7 +393,7 @@ names.forEach(() => {
 
 <div class="image-text">forEach map filter find高阶函数对比情况：</div>
 
-![forEach map filter find高阶函数对比情况](../image/forEach%20map%20filter%20find%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%AF%B9%E6%AF%94%E6%83%85%E5%86%B5.png)
+![forEach map filter find高阶函数对比情况](../image/forEach_map_filter_find高阶函数对比情况.png)
 
 ## this 规则优先级
 

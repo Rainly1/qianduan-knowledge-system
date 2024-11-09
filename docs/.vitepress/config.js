@@ -1,10 +1,12 @@
 // 配置
 // module.exports = {
 export default{
+    ignoreDeadLinks: true,
     // 网站标题
     title: 'Rain',
     //部署的基础路径
-    base: '/',
+    base: '/qianduan-knowledge-system/',
+    // base: '/',
     // 配置网站html的head标签 网站图标
     head: [],
     // 主题配置
@@ -19,7 +21,8 @@ export default{
                 text: "首页",
                 // 跳转项目链接
                 link: '/intro/'
-            },{
+            },
+            {
                 text: "前端导航",
                 // 跳转项目链接
                 link: '/frontendLink/'

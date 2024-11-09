@@ -3,7 +3,11 @@
 ---
 
 <script setup>
-import BoxNav from './BoxNav.vue'
+let BoxNav;
+if (typeof window !== 'undefined') {
+    BoxNav = await import('./BoxNav.vue');
+}
+// import BoxNav from './BoxNav.vue'
 </script>
 
 ## 工具
