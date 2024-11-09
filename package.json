@@ -1,0 +1,26 @@
+{
+  "name": "components-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "vitepress": "^1.0.0-rc.4"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "@vitejs/plugin-react": "^4.3.1",
+    "element-plus": "^2.3.9",
+    "medium-zoom": "^1.1.0",
+    "vue3-photo-preview": "^0.3.0"
+  }
+}

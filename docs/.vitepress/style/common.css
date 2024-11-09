@@ -1,0 +1,53 @@
+.tip-box{
+    border: 1px solid skyblue;
+    padding: 15px;
+    border-radius: 10px;
+    color:#1890ff;
+    margin: 20px 0;
+}
+h1,h2,h3{
+    margin: 0px 0 10px !important;
+    border: none !important;
+    padding: 0 !important;
+}
+.code-title{
+    position: relative; /* 为伪元素定位 */
+    padding-left: 10px; /* 给内容留出空间 */
+}
+.code-title::before {
+    content: '';
+    position: absolute;
+    left: 0; /* 竖线的位置 */
+    top: 0; /* 竖线的顶部 */
+    height: 100%; /* 竖线的高度 */
+    width: 4px; /* 竖线的宽度 */
+    background-color: #10b981; /* 竖线的颜色 */
+}
+
+.tiwen{
+    border: 1px solid #10b981;
+    color: #10b981;
+    padding: 10px;
+    margin: 20px 0 15px;
+    border-radius: 10px;
+}
+.title-key{
+    font-weight: bold;
+    color: #1890ff;
+
+}
+.mark-key{
+    color: #d33f25;
+    font-weight: bold;
+}
+.key-word{
+    color: #1890ff;
+}
+.key-word-line{
+    color: #1890ff;
+    border-bottom: 1px solid #1890ff;
+}
+.image-text{
+    font-weight: bold;
+    
+}
