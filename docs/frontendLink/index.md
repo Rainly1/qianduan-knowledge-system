@@ -3,15 +3,13 @@
 ---
 
 <script setup>
-let BoxNav;
-if (typeof window !== 'undefined') {
-    BoxNav = await import('./BoxNav.vue');
-}
-// import BoxNav from './BoxNav.vue'
+import BoxNav from './BoxNav.vue'
+
 </script>
 
 ## 工具
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://www.json.cn/',
@@ -34,11 +32,14 @@ iconSrc: null,
 title: 'Can I use',
 desc: '前端API兼容性查询'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 前端文档
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://developer.mozilla.org/zh-CN/',
@@ -56,11 +57,13 @@ iconSrc: 'tubiaozhizuomoban',
 title: 'ES6入门教程',
 desc: '阮一峰的网络日志'
 },]"/>
+</ClientOnly>
 
 ---
 
 ## 社区
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://juejin.cn/',
@@ -98,11 +101,13 @@ iconSrc: null,
 title: 'SegmentFault思否',
 desc: '技术问答开发者社区'
 },]"/>
+</ClientOnly>
 
 ---
 
 ## Vue 生态
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://cn.vuejs.org/',
@@ -141,11 +146,14 @@ iconSrc: 'element-plus',
 title: 'Element Plus',
 desc: '基于Vue3，面向设计师和开发者的组件库'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## React 生态
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://zh-hans.react.dev/',
@@ -183,11 +191,14 @@ iconSrc: 'cib-next-js',
 title: 'Next.js',
 desc: '一个用于Web的React框架'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 小程序
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://developers.weixin.qq.com/miniprogram/dev/framework/',
@@ -205,11 +216,14 @@ iconSrc: null,
 title: 'Taro',
 desc: 'Taro 是一个开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 可视化框架
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://echarts.apache.org/zh/index.html',
@@ -232,11 +246,14 @@ iconSrc: null,
 title: 'Three.js',
 desc: 'JavaScript 3d库'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 图表库
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://www.iconfont.cn/',
@@ -251,11 +268,13 @@ iconImg: './img/iconPark.png',
 title: 'IconPark',
 desc: 'IconPark图表库是一个通过技术驱动矢量图标样式的开源图表库，可以实现根据单一的主题色，快速生成一套图标样式。'
 },]"/>
+</ClientOnly>
 
 ---
 
 ## Node
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs',
@@ -268,11 +287,14 @@ iconSrc: null,
 title: 'Express',
 desc: '基于Node.js平台，快速、开放、极简Web开发框架'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 编译&构建&打包工具
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://www.webpackjs.com/',
@@ -300,11 +322,14 @@ iconSrc: 'logo',
 title: 'Rollup',
 desc: 'Rollup是一个JavaScript模块打包器'
 },]"/>
+</ClientOnly>
+
 
 ---
 
 ## 静态站点生成器
 
+<ClientOnly>
 <BoxNav :navLink="[
 {
 link: 'https://astro.build/',
@@ -332,3 +357,5 @@ iconSrc: null,
 title: 'Docusaurus',
 desc: '基于React的静态网站生成器'
 },]"/>
+</ClientOnly>
+

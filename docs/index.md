@@ -7,8 +7,8 @@ heroText: 前端知识库
 
 tagline: 高扩展性的组件库
 
-actionText: 快速开始
-actionLink: /intro/
+# actionText: 快速开始
+actionLink: /frontendLink/
 
 features:
   - title: 简介之上
@@ -20,3 +20,12 @@ features:
 
 lastUpdated: true
 ---
+
+<!-- <script setup>
+import { useRouter, onMounted } from 'vue'
+
+const router = useRouter()
+onMounted(() => {
+  router.go('/frontendLink')
+})
+</script> -->

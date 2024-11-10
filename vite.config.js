@@ -5,6 +5,7 @@ import commonjs from 'vite-plugin-commonjs';
 
 
 export default defineConfig({
+  base: '/qianduan-knowledge-system/frontendLink/',
   plugins: [react(), mdx(),commonjs()],
   // define: {
   //   'window': 'globalThis', // 模拟 window 对象
@@ -14,5 +15,5 @@ export default defineConfig({
     // noExternal: ['your-problematic-module']
     noExternal: ['specific-plugin-or-library']
   },
-  outDir: './docs/' //指定输出目录
+  outDir: './docs/.vitepress/dist'  //指定输出目录
 });

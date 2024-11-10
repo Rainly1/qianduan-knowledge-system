@@ -21,8 +21,7 @@ export default{
                 text: "首页",
                 // 跳转项目链接
                 link: '/intro/'
-            },
-            {
+            },{
                 text: "前端导航",
                 // 跳转项目链接
                 link: '/frontendLink/'
@@ -48,11 +47,11 @@ export default{
             },
             {
                 text: 'github站点',
-                link: '/',
+                link: '#',
                 target: '_blank'
             },{
                 text: 'gitee站点',
-                link: '/',
+                link: '#',
                 target: '_blank'
             }
         ],
@@ -367,10 +366,14 @@ export default{
             }]
     }
     },
-    vue: {
-        reactivityTransform: true,
-        globalComponents: {
-          BoxNav: '../frontendLink/BoxNav.vue'
-        }
-      }
+    // 重定向
+    rewrites: {
+        '/': "/frontendLink"
+    },
+    // vue: {
+    //     reactivityTransform: true,
+    //     globalComponents: {
+    //       BoxNav: '../frontendLink/BoxNav.vue'
+    //     }
+    //   }
 }

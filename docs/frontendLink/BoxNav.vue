@@ -1,26 +1,29 @@
 <template>
-    <div class="box-container">
-    <div v-for="(item, index) in navLink" :key="index" >
-        <a class="box-link" :href="item?.link" rel="noreferrer" target="_blank">
-            <article class="box">
-                <div class="box-header">
-                    <div class="box-icon">
-                        <svg class="iconfont" aria-hidden="true" v-if="item?.iconSrc">
-                            <use :xlink:href="`#icon-${item.iconSrc}`"></use>
-                        </svg>
-                        <!-- <i :class="`iconfont ${'icon-Vue'}`"></i> -->
-                        <img :src="item?.iconImg" v-if="item?.iconImg" class="iconImg"/>
-                    </div>
-                    <h5 class="title">{{item?.title}}</h5>
-                </div>
-                <p class="desc">{{item?.desc}}</p>
-            </article>
-        </a>
-    </div>
-</div>
+   <client-only>
+     <div class="box-container">
+     <div v-for="(item, index) in navLink" :key="index" >
+         <a class="box-link" :href="item?.link" rel="noreferrer" target="_blank">
+             <article class="box">
+                 <div class="box-header">
+                     <div class="box-icon">
+                         <svg class="iconfont" aria-hidden="true" v-if="item?.iconSrc">
+                             <use :xlink:href="iconHref(item.iconSrc)"></use>
+                             <!-- <use :xlink:href="`#icon-${item.iconSrc}`"></use> -->
+                         </svg>
+                         <!-- <i :class="`iconfont ${'icon-Vue'}`"></i> -->
+                         <img :src="item?.iconImg" v-if="item?.iconImg" class="iconImg"/>
+                     </div>
+                     <h5 class="title">{{item?.title}}</h5>
+                 </div>
+                 <p class="desc">{{item?.desc}}</p>
+             </article>
+         </a>
+     </div>
+ </div>
+</client-only>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { computed } from "vue";
 import "../staticImg/iconfont/iconfont.js";
 
 const props = defineProps({
@@ -29,12 +32,11 @@ const props = defineProps({
     required: true
   }
 })
+const iconHref = (iconSrc) => `#icon-${iconSrc}`;
+// const iconHref = (iconSrc) => computed(() => `#icon-${iconSrc}`);
 </script>
 
 <style>
-/* @import "../staticImg/iconfont/iconfont.css"; */
-/* @import "../staticImg/iconfont/iconfont.js"; */
-
 .iconfont {
   /* font-size: 24px; */
   fill: currentColor;
